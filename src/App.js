@@ -9,7 +9,7 @@ import Developer from "./components/develop"
 
 
 const { Content, Sider } = Layout;
-let page = <User/>;
+let page = <Developer/>;
 
 class App extends React.Component {
   state = {
@@ -17,21 +17,14 @@ class App extends React.Component {
   };
 
   onCollapse = collapsed => {
-    console.log(collapsed);
     this.setState({ collapsed });
   };
 
   swicthPage = key => {
     if (key === "1") {
-      page = <User/>;
-    }else if(key === '2'){
       page = <Developer/>;
-    }
-    else if(key === '3'){
-      page = <div> {key} </div>;
-    }
-    else if(key === '4'){
-      page = <div> {key} </div>;
+    }else if(key === '2'){
+      page =  <User/>;
     }
   };
 
@@ -53,20 +46,12 @@ class App extends React.Component {
           >
             <Menu.Item key="1">
               <Icon type="user" />
-              <span>User</span>
+              <span>Pokemon list</span>
             </Menu.Item>
 
             <Menu.Item key="2">
               <Icon type="code" />
               <span>Developer</span>
-            </Menu.Item>
-            <Menu.Item key="3">
-              <Icon type="book" />
-              <span>Education</span>
-            </Menu.Item>
-            <Menu.Item key="4">
-              <Icon type="cluster" />
-              <span>Skills</span>
             </Menu.Item>
           </Menu>
       

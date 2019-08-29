@@ -5,6 +5,10 @@
   font-family: "Darker Grotesque", sans-serif;
 }
 
+*body{
+  background-color:780116;
+}
+
 .App {
   text-align: center;
 }
@@ -48,7 +52,7 @@
 .content {
   height: 100%;
   padding: 2%;
-  background: "#fff";
+  background: "#780116";
   min-height: 360px;
 }
 
