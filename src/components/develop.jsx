@@ -43,7 +43,7 @@ class Developer extends React.Component {
                       onDragStart={handleOnDragStart}
                       className="card-develop"
                     >
-                      <p className="developSection"> {item.name}</p>
+                      <p className="developSection"> Chulos Pokedex</p>
                       <div className="content-card">
                         <br />
                         <br />
@@ -79,7 +79,7 @@ class Developer extends React.Component {
           </AliceCarousel>
         </div>
         <Modal
-          title={this.state.details ? this.state.details.name : ""}
+          title={this.state.details ? this.state.details.name.toUpperCase() : ""}
           centered
           visible={this.state.openModal}
           onOk={() => this.setState({ openModal: false })}
